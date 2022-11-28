@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <title>Wii Shop Channel Music - Configuración</title>
+    <style>
+        html,
+        body {
+            width: 300px;
+        }
+        select {
+            overflow: auto;
+        }
+        .btn-wii {
+            background: linear-gradient(to bottom, #f5fafe 0%,#fdfdfe 7%,#f2fdff 81%,#e8f3f8 86%,#e7f2f6 89%,#e4f0f3 93%,#ddeff0 100%);
+            border: 1px solid #34bfed;
+        }
+        .btn-wii:active {
+            background: linear-gradient(to top, #f5fafe 0%,#fdfdfe 7%,#f2fdff 81%,#e8f3f8 86%,#e7f2f6 89%,#e4f0f3 93%,#ddeff0 100%);
+        }
+    </style>
+</head>
+
+<body>
+    <div class="container-fluid">
+
+        <button class="btn btn-sm btn-wii mt-3 w-100" id="music-toggle">...</button>
+        <div class="form-text">Necesitas refrescar las tabs para que tenga efecto.</div>
+
+        <label for="music-picker" class="mt-2 form-label">Selecciona el tema:</label>
+        <select id="music-picker" multiple size="6" class="form-select w-100" multiple>
+            <option value="wii-shop-theme">Wii Shop Channel</option>
+            <option value="wii-shop-banner-theme">Wii Shop Channel (Menu)</option>
+            <option value="wii-u-eshop-theme">Wii U eShop</option>
+            <option value="3ds-eshop-theme">3DS eShop</option>
+            <option value="dsi-shop-theme">DSi Shop</option>
+            <option value="coconut-mall">Coconut Mall</option>
+            <option value="Nintendo-Wii-Mii-Channel-Theme">Wii Mii Channel</option>
+        </select>
+
+        <div class="mt-2">Más opciones</div>
+
+        
+        <button class="btn btn-sm btn-wii mt-2 mb-3 w-100" data-link="https://github.com/corbindavenport/wii-shop-extension/">Repositorio proyecto original en GitHub</button>
+        <button class="btn btn-sm btn-wii mt-2 mb-3 w-100" data-link="https://github.com/dargor980">Repositorio de este proyecto</button>
+
+    </div>
+    <script src="js/bootstrap.min.js"></script>
+    <script src="js/popup.js"></script>
+</body>
+
+</html>
